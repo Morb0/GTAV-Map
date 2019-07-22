@@ -21,7 +21,7 @@ $(function() {
 	var currentMarker;
 	
 	var assetsUrl = function() {
-		return window.location.hostname == 'localhost' ? '' : 'https://serdidg.github.io/GTAV-Map/';
+		return window.location.hostname == 'localhost' ? '' : window.location.origin + window.location.pathname;
 	};
 
 	Handlebars.registerHelper('assetsUrl', assetsUrl);
